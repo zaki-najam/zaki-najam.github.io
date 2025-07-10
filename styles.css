@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Navigation */
+#navbar {
+    background-color: #1e1e1e;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+#navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar .logo a {
+    color: #f8b400;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+#navbar .nav-links li a {
+    color: #fff;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+#navbar .nav-links li a:hover {
+    color: #f8b400;
+}
+
+#navbar .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+#navbar .hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+}
+
+#navbar .nav-links.active {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #1e1e1e;
+    width: 50%;
+    text-align: right;
+    padding: 20px;
+}
+
+#navbar .nav-links.active li {
+    padding: 10px 0;
+}
+
+/* Hero Section */
+#hero {
+    background-image: url('https://via.placeholder.com/1500x600');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.hero-content .btn {
+    padding: 10px 20px;
+    background-color: #f8b400;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+.hero-content .btn:hover {
+    background-color: #d49c00;
+}
+
+/* About Us Section */
+#about {
+    background-color: #181818;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#about p {
+    font-size: 1.1em;
+    margin-top: 20px;
+}
+
+/* Gallery Section */
+#gallery {
+    background-color: #121212;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#gallery .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+#gallery .gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Contact Us Section */
+#contact {
+    background-color: #181818;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contact label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #f8b400;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+#contact button {
+    width: 100%;
+    padding: 15px;
+    background-color: #f8b400;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+#contact button:hover {
+    background-color: #d49c00;
+}
+
+/* Footer */
+footer {
+    background-color: #1e1e1e;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #navbar .nav-links {
+        display: none;
+    }
+
+    #navbar .hamburger {
+        display: flex;
+    }
+
+    #navbar .logo {
+        font-size: 1.5em;
+    }
+
+    #navbar .nav-links.active {
+        display: block;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        background-color: #1e1e1e;
+        width: 100%;
+        text-align: left;
+        padding: 20px;
+    }
+
+    #navbar .nav-links.active li {
+        padding: 10px
