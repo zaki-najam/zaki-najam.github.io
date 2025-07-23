@@ -14,7 +14,7 @@ body {
 /* Navigation */
 #navbar {
     background-color: #1e1e1e;
-    padding: 20px 0;
+    padding: 15px 0; /* Reduced padding for better spacing */
     position: sticky;
     top: 0;
     z-index: 10;
@@ -24,6 +24,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px; /* Added horizontal padding */
 }
 
 #navbar .logo a {
@@ -37,7 +38,7 @@ body {
 #navbar .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 25px;
 }
 
 #navbar .nav-links li a {
@@ -69,9 +70,9 @@ body {
     top: 60px;
     right: 0;
     background-color: #1e1e1e;
-    width: 50%;
-    text-align: right;
-    padding: 20px;
+    width: 100%;
+    text-align: left;
+    padding: 30px 20px; /* Added more padding */
 }
 
 #navbar .nav-links.active li {
@@ -85,21 +86,21 @@ body {
     background-position: center;
     color: #fff;
     text-align: center;
-    padding: 100px 0;
+    padding: 120px 20px; /* Increased padding for better hero spacing */
 }
 
 .hero-content h1 {
     font-size: 3.5em;
-    margin-bottom: 10px;
+    margin-bottom: 20px; /* Added space between title and description */
 }
 
 .hero-content p {
     font-size: 1.5em;
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* Increased space between paragraph and button */
 }
 
 .hero-content .btn {
-    padding: 10px 20px;
+    padding: 15px 30px; /* Increased padding for the button */
     background-color: #f8b400;
     color: #121212;
     border: none;
@@ -115,26 +116,26 @@ body {
 /* About Us Section */
 #about {
     background-color: #181818;
-    padding: 60px 0;
+    padding: 80px 20px; /* Increased padding for better spacing */
     text-align: center;
 }
 
 #about p {
     font-size: 1.1em;
-    margin-top: 20px;
+    margin-top: 30px; /* Increased space between heading and paragraph */
 }
 
 /* Gallery Section */
 #gallery {
     background-color: #121212;
-    padding: 60px 0;
+    padding: 80px 20px; /* Increased padding for better spacing */
     text-align: center;
 }
 
 #gallery .gallery-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 30px; /* Increased gap between gallery items */
 }
 
 #gallery .gallery-item img {
@@ -146,26 +147,29 @@ body {
 /* Contact Us Section */
 #contact {
     background-color: #181818;
-    padding: 60px 0;
+    padding: 80px 20px; /* Increased padding for better spacing */
     text-align: center;
 }
 
 #contact form {
-    max-width: 600px;
+    max-width: 700px; /* Increased form width */
     margin: 0 auto;
     text-align: left;
+    padding: 20px; /* Added padding around form */
+    background-color: #1e1e1e;
+    border-radius: 10px; /* Rounded corners for the form */
 }
 
 #contact label {
     display: block;
-    margin: 10px 0 5px;
+    margin: 15px 0 5px;
     color: #f8b400;
 }
 
 #contact input, #contact textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
+    padding: 12px;
+    margin-bottom: 20px; /* Increased space between inputs */
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #1e1e1e;
@@ -174,7 +178,7 @@ body {
 
 #contact button {
     width: 100%;
-    padding: 15px;
+    padding: 18px;
     background-color: #f8b400;
     color: #121212;
     border: none;
@@ -192,7 +196,7 @@ footer {
     background-color: #1e1e1e;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 25px 0; /* Increased padding for footer */
 }
 
 /* Responsive Design */
@@ -217,8 +221,19 @@ footer {
         background-color: #1e1e1e;
         width: 100%;
         text-align: left;
-        padding: 20px;
+        padding: 30px 20px;
     }
 
     #navbar .nav-links.active li {
-        padding: 10px
+        padding: 12px 0; /* Increased padding for mobile navigation items */
+    }
+
+    #gallery .gallery-grid {
+        grid-template-columns: repeat(2, 1fr); /* Adjusted gallery layout for smaller screens */
+        gap: 15px;
+    }
+
+    #contact form {
+        max-width: 90%; /* Form will take up 90% width on smaller screens */
+    }
+}
